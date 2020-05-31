@@ -30,6 +30,12 @@ function compara(x){
     let res = document.querySelector('#resposta')
     if (x==1){res.innerHTML='PAPEL';}
     else if (x==2){res.innerHTML='TESOURA'}
-    else if(x==3){res.innerHTML='PEDRA'} 
+    else if(x==3){res.innerHTML='PEDRA'}
+    placar() 
 }
-
+function placar(){
+    let plac = document.querySelector('.placar')
+    cpu++
+    plac.innerHTML = `CPU ${cpu} x 0 Player `
+}
+var cpu=0;

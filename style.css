@@ -45,3 +45,18 @@ body{
 .bt:active{
     opacity: 0.6;
 }
+/*PLACAR*/
+.placar{
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #1380A2;
+    border-radius: 5px;
+    width:95%;
+    height: 100px;
+    padding: 20px;
+    border: double 5px #00475C;
+    box-shadow: 1px 1px 4px;
+}
