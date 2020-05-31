@@ -54,6 +54,19 @@ body{
         font-size: 10pt;
     }
 }
+@media (min-width: 1025px){
+    body{
+        width: 35%;
+        
+        margin: auto;
+        border: double 5px silver;
+        box-shadow: 1 1 4;
+    }
+    .placar{
+        width: 100%;
+        margin: -5px;
+    }
+}
 /*PLACAR*/
 .placar{
     font-size: 15pt;
