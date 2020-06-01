@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jokenpo</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        var CPU = 0
+        var ply = 0
+    </script>
 </head>
 <body>
     <div class='inicio'>
@@ -15,12 +19,28 @@
         <img class='image' id='ima' src="images/main.png" alt=Main image>
     </div>
     <div class='bt-wrapper'>
-        <button onclick="pedra()" class='bt'>Pedra</button>
+        <button onclick="pedra(nivel)" class='bt' id='bt1'>Pedra</button>
         <button onclick="papel()" class='bt'>Papel</button>
         <button onclick="tesoura()" class='bt'>Tesoura</button>
     </div>
     <div class="placar">CPU 0 x 0 Player</div>
+    <div class="level">
+        <button class='bt' onclick="muda()">Normal</button>
+        <button onclick="muda()" class='bt'>Hard</button>
+    </div>
     
 </body>
-<script src="jokenpo.js"></script>
+<script>
+    var nivel = 1
+    function muda(){
+        if(nivel==1){
+            nivel = 0 
+            alert('Dificuldade: Normal')}
+        else if(nivel==0){
+            nivel = 1
+            alert('Dificuldade: HARD')
+        }     
+    }
+</script>
+<script id='nivel' src="jokenpo.js"></script>
 </html>
