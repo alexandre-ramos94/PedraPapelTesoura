@@ -5,6 +5,11 @@ body{
     margin: 0;
     background-color: rgba(66, 183, 219, 0.116);
 }
+.content{
+    margin: auto;
+    max-width: 500px;
+    max-height: 800px;
+}
 .inicio{
     display: flex;
     align-items: center;
@@ -54,19 +59,22 @@ body{
         font-size: 10pt;
     }
 }
-@media (min-width: 1024px){
-    body{
-        width: 30%;
-        
-        margin: auto;
-        border: double 5px silver;
-        box-shadow: 1px 1px 4px;
+@media (min-width: 750px){
+    .content{
+        max-width: 800px;
     }
     .placar{
-        width: 100%;
-        margin: -50px;
+        width: 95%;
+        
     }
-    .bt{width:160px;}
+    .bt{min-width:190px;min-height:120px;}
+}
+@media (min-width: 1500px){
+    .content{
+        max-width: 500px;
+    }
+    .bt{min-width:140px;min-height:80px;}
+
 }
 /*PLACAR*/
 .placar{
@@ -77,7 +85,7 @@ body{
     margin: 10px;
     background-color: #1380A2;
     border-radius: 5px;
-    width:95%;
+    max-width: 100%;
     height: 90px;
     padding: 20px;
     border: double 5px #00475C;
