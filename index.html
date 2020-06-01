@@ -26,22 +26,26 @@
         </div>
         <div class="placar">CPU 0 x 0 Player</div>
         <div class="level">
-            <button class='bt' onclick="muda()">Normal</button>
-            <button onclick="muda()" class='bt'>Hard</button>
+            <button class='bt' onclick="facil()">Fácil</button>
+            <button class='bt' onclick="normal()">Normal</button>
+            <button onclick="hard()" class='bt'>Hard</button>
         </div>
         
     </div>
 </body>
 <script>
-    var nivel = 1
-    function muda(){
-        if(nivel==1){
-            nivel = 0 
-            alert('Dificuldade: Normal')}
-        else if(nivel==0){
-            nivel = 1
-            alert('Dificuldade: HARD')
-        }     
+    var nivel = 2
+    function normal(){
+        nivel = 0 
+        alert('Dificuldade: Normal')
+    }
+    function facil(){
+        nivel=2
+        alert('Dificuldade: Fácil')
+    }
+    function hard(){
+        nivel=1
+        alert('Dificuldade: Hard')
     }
 </script>
 <script id='nivel' src="jokenpo.js"></script>
