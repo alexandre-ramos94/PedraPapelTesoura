@@ -9,6 +9,9 @@ body{
     margin: auto;
     max-width: 500px;
     max-height: 800px;
+    filter: blur(15px);
+    transition: filter 0.4s;
+   
 }
 .inicio{
     display: flex;
@@ -94,6 +97,17 @@ body{
     text-transform: uppercase;
 }
 .level{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -400px;
     display: flex;
     justify-content: space-around;
+}
+@media (max-height: 900px){
+    .level{
+        margin-top: -100px;
+        margin-left: -180px;
+    }
 }
