@@ -8,12 +8,18 @@
     <script>
         var CPU = 0
         var ply = 0
+        var menu = 0
     </script>
 </head>
 <body>
     <div class='content'>
         <div class='inicio'>
             <p id='resposta'>Pronto(a) Para perder?</p>
+            <div onclick="drop()" class="menu-wrapper">
+                <a class='bar' href="#"></a>
+                <a class='bar' href="#"></a>
+                <a class='bar' href="#"></a>
+             </div>
     
         </div>
         <div class='image'>
@@ -33,6 +39,7 @@
         <button class='bt' onclick="normal()">Normal</button>
         <button onclick="hard()" class='bt'>Hard</button>
     </div>
+    
 </body>
 <script>
     var nivel = 2
@@ -57,6 +64,14 @@
         h.style.display='none'
         let bd = document.querySelector('.content')
         bd.style.filter="blur(0px)"
+    }
+
+    function drop(){
+        let h = document.querySelector('.level')
+        if (menu==0){h.style.display='block';menu=1}
+        else if(menu!=0){h.style.display='none';menu=0}
+
+
     }
 </script>
 <script id='nivel' src="jokenpo.js"></script>

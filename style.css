@@ -9,11 +9,12 @@ body{
     margin: auto;
     max-width: 500px;
     max-height: 800px;
-    filter: blur(15px);
+    /*filter: blur(15px);*/
     transition: filter 0.4s;
    
 }
 .inicio{
+    position: relative;
     display: flex;
     align-items: center;
     border: double 2px grey;
@@ -27,6 +28,7 @@ body{
 }
 .inicio p{
     margin: auto;
+    
 }
 .image{
     background-color: whitesmoke;
@@ -110,4 +112,21 @@ body{
         margin-top: -100px;
         margin-left: -180px;
     }
+}
+/*MENU STYLES*/
+.menu-wrapper{
+    padding: 2px;
+    position: absolute;
+    top: 0;
+    right:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30px;
+}
+.bar{
+    border-radius: 10%;
+    background-color: white;
+    width: 30px;
+    height: 5px;
 }
