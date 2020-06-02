@@ -15,17 +15,17 @@ function pedra(nivel){
         let txtpick = document.querySelector('#resposta')
         let plac = document.querySelector('.placar')
         if(pick==1){
-            imagem.src='images/rock.png';txtpick.innerHTML='PEDRA'
+            imagem.src='images/rock.png';txtpick.innerHTML='ROCK'
             alert('Empate, tambem escolhi pedra')
         }
         else if(pick==2){
-            imagem.src='images/paper.png';txtpick.innerHTML='PAPEL'
+            imagem.src='images/paper.png';txtpick.innerHTML='PAPER'
             alert('Escolhi papel GANHEI!')
             cpu++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
         }
         else if(pick==3){
-            imagem.src='images/scissor.png';txtpick.innerHTML='TESOURA'
+            imagem.src='images/scissor.png';txtpick.innerHTML='SCISSOR'
             alert('Escolhi tesoura PERDI!')
             ply++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
@@ -38,17 +38,17 @@ function pedra(nivel){
         let txtpick = document.querySelector('#resposta')
         let plac = document.querySelector('.placar')
         if(pick==1){
-            imagem.src='images/rock.png';txtpick.innerHTML='PEDRA'
+            imagem.src='images/rock.png';txtpick.innerHTML='ROCK'
             alert('Empate, tambem escolhi pedra')
         }
         else if(pick==2){
-            imagem.src='images/paper.png';txtpick.innerHTML='PAPEL'
+            imagem.src='images/paper.png';txtpick.innerHTML='PAPER'
             alert('Escolhi papel GANHEI!')
             cpu++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
         }
         else if(pick==3 || pick==4){
-            imagem.src='images/scissor.png';txtpick.innerHTML='TESOURA'
+            imagem.src='images/scissor.png';txtpick.innerHTML='SCISSOR'
             alert('Escolhi tesoura PERDI!')
             ply++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
@@ -71,18 +71,18 @@ function papel(){
         let txtpick = document.querySelector('#resposta')
         let plac = document.querySelector('.placar')
         if(pick==1){
-            imagem.src='images/rock.png';txtpick.innerHTML='PEDRA'
+            imagem.src='images/rock.png';txtpick.innerHTML='ROCK'
             alert('Droga escolhi pedra, PERDI!')
             ply++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
         }
         else if(pick==2){
-            imagem.src='images/paper.png';txtpick.innerHTML='PAPEL'
+            imagem.src='images/paper.png';txtpick.innerHTML='PAPER'
             alert('Eu tambem escolhi papel, EMPATE')
             
         }
         else if(pick==3){
-            imagem.src='images/scissor.png';txtpick.innerHTML='TESOURA'
+            imagem.src='images/scissor.png';txtpick.innerHTML='SCISSOR'
             alert('Escolhi Tesoura GANHEI!')
             cpu++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
@@ -96,18 +96,18 @@ function papel(){
         let txtpick = document.querySelector('#resposta')
         let plac = document.querySelector('.placar')
         if(pick==1 || pick==4){
-            imagem.src='images/rock.png';txtpick.innerHTML='PEDRA'
+            imagem.src='images/rock.png';txtpick.innerHTML='ROCK'
             alert('Droga escolhi pedra, PERDI!')
             ply++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
         }
         else if(pick==2){
-            imagem.src='images/paper.png';txtpick.innerHTML='PAPEL'
+            imagem.src='images/paper.png';txtpick.innerHTML='SCISSOR'
             alert('Eu tambem escolhi papel, EMPATE')
             
         }
         else if(pick==3){
-            imagem.src='images/scissor.png';txtpick.innerHTML='TESOURA'
+            imagem.src='images/scissor.png';txtpick.innerHTML='PAPER'
             alert('Escolhi Tesoura GANHEI!')
             cpu++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
@@ -127,20 +127,20 @@ function tesoura(){
         let txtpick = document.querySelector('#resposta')
         let plac = document.querySelector('.placar')
         if(pick==1){
-            imagem.src='images/rock.png';txtpick.innerHTML='PEDRA'
+            imagem.src='images/rock.png';txtpick.innerHTML='ROCK'
             alert('escolhi pedra, VENCI haha!')
             cpu++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
         }
         else if(pick==2){
-            imagem.src='images/paper.png';txtpick.innerHTML='PAPEL'
+            imagem.src='images/paper.png';txtpick.innerHTML='PAPER'
             alert('Escolhi Papel PERDI!')
             ply++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
             
         }
         else if(pick==3){
-            imagem.src='images/scissor.png';txtpick.innerHTML='TESOURA'
+            imagem.src='images/scissor.png';txtpick.innerHTML='SCISSOR'
             alert('Eu tabem escolhi tesoura, EMPATE')
         }
     
@@ -151,20 +151,20 @@ function tesoura(){
         let txtpick = document.querySelector('#resposta')
         let plac = document.querySelector('.placar')
         if(pick==1){
-            imagem.src='images/rock.png';txtpick.innerHTML='PEDRA'
+            imagem.src='images/rock.png';txtpick.innerHTML='ROCK'
             alert('escolhi pedra, VENCI haha!')
             cpu++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
         }
         else if(pick==2 || pick==4){
-            imagem.src='images/paper.png';txtpick.innerHTML='PAPEL'
+            imagem.src='images/paper.png';txtpick.innerHTML='PAPER'
             alert('Escolhi Papel PERDI!')
             ply++
             plac.innerHTML=`CPU ${cpu} x ${ply} Player`
             
         }
         else if(pick==3){
-            imagem.src='images/scissor.png';txtpick.innerHTML='TESOURA'
+            imagem.src='images/scissor.png';txtpick.innerHTML='SCISSOR'
             alert('Eu tabem escolhi tesoura, EMPATE')
             }
     }
@@ -172,9 +172,9 @@ function tesoura(){
 
 function compara(x){
     let res = document.querySelector('#resposta')
-    if (x==1){res.innerHTML='PAPEL';}
-    else if (x==2){res.innerHTML='TESOURA'}
-    else if(x==3){res.innerHTML='PEDRA'}
+    if (x==1){res.innerHTML='PAPER';}
+    else if (x==2){res.innerHTML='SCISSOR'}
+    else if(x==3){res.innerHTML='ROCK'}
     placar() 
 }
 function placar(){

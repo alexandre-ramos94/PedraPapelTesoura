@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokenpo</title>
+    <title>RockPaperScissor</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/fav.png" type="image/x-icon">
     <script>
         var CPU = 0
         var ply = 0
@@ -14,7 +15,7 @@
 <body>
     <div class='content'>
         <div class='inicio'>
-            <p id='resposta'>Pronto(a) Para perder?</p>
+            <p id='resposta'>Are you ready?</p>
             <div onclick="drop()" class="menu-wrapper">
                 <a class='bar' href="#"></a>
                 <a class='bar' href="#"></a>
@@ -26,18 +27,18 @@
             <img class='image' id='ima' src="images/main.png" alt=Main image>
         </div>
         <div class='bt-wrapper'>
-            <button onclick="pedra(nivel)" class='bt' id='bt1'>Pedra</button>
-            <button onclick="papel()" class='bt'>Papel</button>
-            <button onclick="tesoura()" class='bt'>Tesoura</button>
+            <button onclick="pedra(nivel)" class='bt' id='bt1'>ROCK</button>
+            <button onclick="papel()" class='bt'>PAPER</button>
+            <button onclick="tesoura()" class='bt'>SCISSOR</button>
         </div>
         <div class="placar">CPU 0 x 0 Player</div>
         
         
     </div>
     <div class="level">
-        <button class='bt' onclick="facil()">Fácil</button>
-        <button class='bt' onclick="normal()">Normal</button>
-        <button onclick="hard()" class='bt'>Hard</button>
+        <button class='bt' onclick="facil()">EASY</button>
+        <button class='bt' onclick="normal()">NORMAL</button>
+        <button onclick="hard()" class='bt'>CRAZY-Hard</button>
     </div>
     
 </body>
